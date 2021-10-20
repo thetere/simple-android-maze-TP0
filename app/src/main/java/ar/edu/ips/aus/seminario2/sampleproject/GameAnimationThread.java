@@ -9,6 +9,10 @@ public class GameAnimationThread extends Thread {
     private GameView gameView;
     private boolean running;
     public static Canvas canvas;
+    //state of game (Running or Paused). agregamos esto de https://blorb.tumblr.com/post/236799414/simple-java-android-game-loop para que no se recarguen los personajes al irse al background
+    int state = 1;
+    public final static int RUNNING = 1;
+    public final static int PAUSED = 2;
 
     public GameAnimationThread(SurfaceHolder surfaceHolder, GameView gameView){
         super();

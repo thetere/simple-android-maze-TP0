@@ -22,7 +22,8 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+            <!--    <category android:name="android.intent.category.LAUNCHER" /> -->
+                <!--  Comente esto de arriba para que no haya dos iconitos, uno que abre con splash y otro que abre directamente esta activity -->
             </intent-filter>
         </activity>
     </application>
