@@ -9,25 +9,42 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_width="397dp"
+        android:layout_height="725dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/laberinto_black" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/laberinto_port" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="312dp"
-        android:layout_height="143dp"
+        android:layout_width="310dp"
+        android:layout_height="87dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:text="Rescata a tu hermanite bebe insoportable de Jareth el princesa de los duendes!"
-        android:textColor="#FF0"
+        android:gravity="center_horizontal"
+        android:text="Rescata a tu hermanite bebe insoportable de Jareth el príncipe de los duendes!"
+        android:textColor="#FFF"
         android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <Button
+        android:id="@+id/buttonJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.967" />
 </androidx.constraintlayout.widget.ConstraintLayout>
