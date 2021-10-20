@@ -43,14 +43,14 @@ public class Game {
         String id = Settings.Secure.getString(this.context.getContentResolver(),
                 Settings.Secure.ANDROID_ID);
         player = new Player(id,0.5,0.5);
-        Player player2 = new Player("NNNN", 8.5, 8.5);
+        /*Player player2 = new Player("NNNN", 8.5, 8.5);
         player2.setNewDirection(MazeBoard.Direction.NORTH);
         Player player3 = new Player("ZZZZ", 0, 8.5);
-        player3.setNewDirection(MazeBoard.Direction.NORTH);
+        player3.setNewDirection(MazeBoard.Direction.NORTH);*/
 
         players.add(player);
-        players.add(player2);
-        players.add(player3);
+       /* players.add(player2);
+        players.add(player3);*/
     }
 
     public Player getPlayer() {
